@@ -134,9 +134,9 @@ html, body{
 .section-me{
     display:flex;
     margin:0;
-    background: #2c3e50;
     justify-content: space-between;
     width:100%;
+    background: gainsboro;
 }
 
 .section-me__container{
@@ -149,10 +149,8 @@ html, body{
 
 .section-me__container-text{
     display:flex;
-    border:5px solid gainsboro;
     align-items: center;
     flex-grow:1;
-    background: gainsboro;
     font-size:20px;
     justify-content: center;
 }
@@ -160,6 +158,10 @@ html, body{
 .section-me__container-fotka{
     display:flex;
     border:5px solid gainsboro;
+    border-radius: 50%;
+    max-height: 500px;
+    max-width: 500px;
+    width: 100%;
 }
 
 @media only screen and (max-width:780px){
