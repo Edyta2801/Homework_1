@@ -1,7 +1,7 @@
 html, body{
-    padding:0;
+    max-width:1300px;
     margin:0;
-   
+    padding:0;
 }
 
 .menu{
@@ -10,16 +10,16 @@ html, body{
     width:100%;
     top:0;
     left: 0;
-    background-color:grey;
+    background-color:#263238;
 }
 
 .menu__logo{
     flex-grow: 1;
-    background-color: green; 
-    background-image: url("favicons/mstile-150x150.png");
+    background-color:#546E7A; 
+    background-image: url("favicons/JFD-Favicon-black-150.png");
     background-repeat: no-repeat;
     background-position: top left;
-    background-size:80px;
+    background-size:50px;
 }
 
 
@@ -44,67 +44,49 @@ html, body{
 }
 
 .menu__list-item:hover{
-    color:yellow;
+    color:#1289A7;
 }
 
 .menu__list-item--active{
     color:red;
 }
 .menu__logo:hover{
-    color:purple;
+    color:#263238;
 }
 
-/* .menu__logo:visited{
-    color:black; 
-} */
-
-
-
-@media (max-width:590px){
-    .menu, .menu__list{
-        flex-direction:column;
-    }
+.section__hero{
+    height: 540px;
+    padding:0;
+    margin:0;
 }
-
-
-
-
-
-/* sekcja hero */
 
 .section__hero__container{
     display:flex;
     width:100%;
-    height:100vh;
+    height:100%;
     background-image:url(images/image1.jpg);
     background-size:100% 100%;
     justify-content: center;
     align-items: center;
 }
 .section__hero__container__box{
-    padding:10px;
-    color:#2d3436;
+    color:black;
     text-align: center;
     font-family:  'Lucida Sans';
     font-weight: bold;
     text-shadow: rgb(171, 171, 171) 1px 0px 0px, rgb(171, 171, 171) 0.540302px 0.841471px 0px, rgb(171, 171, 171) -0.416147px 0.909297px 0px, rgb(171, 171, 171) -0.989992px 0.14112px 0px, rgb(171, 171, 171) -0.653644px -0.756802px 0px, rgb(171, 171, 171) 0.283662px -0.958924px 0px, rgb(171, 171, 171) 0.96017px -0.279415px 0px;
 }
 .section__hero__container__box__text-1{
-    padding:10px;
-    font-size: 34px;
-    text-transform: uppercase;
+    font-size: 20px; 
+    text-align: center;
 }
-.section__hero__box__features-desc{
-    padding:10px;
-    font-size: 20px;
-    text-align:top;
-}
+
 .section__hero__box__sign-in{
     font-size:25px;
-    color:#2d3436;
+    color:#1B1464;
     padding:10px;
     text-decoration: none;
-    background-image: linear-gradient(#ff7675,#e9a3a3);
+    background-image: linear-gradient(#009432, #A3CB38);
     border:1px solid #2d3436;
     border-radius: 6px;
     -webkit-box-shadow: 9px 10px 26px 4px rgba(0,0,0,0.75);
@@ -112,49 +94,31 @@ html, body{
     box-shadow: 9px 10px 26px 4px rgba(0,0,0,0.75);
 }
 .section__hero__box__sign-in:hover{
-    background-image: linear-gradient(#e9a3a3,#ff7675);
-    color: #636e72;
+    background-image: linear-gradient(#006266,#e67e22);
+    color: #2c3e50;
 }
 
-
-
-
-.section__hero {
-    margin-top: 20px;
-}
-
-
-
-/* .section-technology{
-    margin:0 auto;
-    width:500%;
-    min-width: 200px;
-} */
 
 
 .section-technology{
     display:flex;
-    /* justify-content: center;
-    align-items:flex-start; */
-    /* background-color: #ff7675; */
-    padding:10px;
     margin:0;
+    padding:50px 0px 40px 0px;
     width: 100%;
-    background: #636e72;
-    
+    height:500px;
+    background:#2c3e50;
 }
 
 .section-technology__container{
     display:flex;
-    /* justify-content: center;
-    align-items:center; */
     background:whitesmoke; 
-    padding:10px;
-    margin:10px;
+    padding:20px;
+    margin:20px;
     box-sizing:border-box;
     border:5px solid gainsboro;
     border-radius: 10px;
     text-align: justify;
+    width:100%;
     
    
 }
@@ -163,9 +127,9 @@ html, body{
     display:flex;
     flex-grow: 1;
     background-image: url(images/HTML5_logo.png);
-    background-size: 30%;
+    background-size: 33%;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 50% 70%;
     
 
 } 
@@ -175,9 +139,9 @@ html, body{
     display:flex;
     flex-grow: 1;
     background-image: url(images/CSS3_logo.png);
-    background-size: 30%;
+    background-size: 20%;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 50% 70%;
 }
 
 
@@ -187,37 +151,45 @@ html, body{
     background-image: url(images/JavaScript_logo.png);
     background-size: 20%;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 50% 70%;
 }
 
 
- /* .section-technology__container-photo{ 
-    width:100px;
-    height:100px;
-    margin:10px;
- } */
-     
+.section-me{
+    display:flex;
+    margin:0; 
+    background: #2c3e50;  
+    justify-content: space-between;
+    width:100%;
+    
+}
 
-
-
-
-
-/* section-about-me__item--desciption{
+.section-me__container{
     display: flex;
+    flex-wrap:wrap-reverse;
+    text-align: center;
+    flex-flow:row;
+    justify-content: center;
+}
+    
+    
+   
+
+.section-me__container-text{
+    display:flex;
+    border:5px solid gainsboro;
+    align-items: center; 
     flex-grow:1;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
+    background: gainsboro;
+    font-size:20px;
+    justify-content: center;
+} 
+    
+.section-me__container-fotka{ 
+    display:flex;
+    border:5px solid gainsboro;
+} 
+    
 
 
 
@@ -226,9 +198,7 @@ html, body{
     .menu, .menu__list{
     flex-direction:column;
     }
-    .section__hero {
-    margin-top: 310px;
-    }
+
     .section-technology{
         display: flex;
         flex-wrap: wrap;
@@ -247,10 +217,15 @@ html, body{
     }
     .section-technology__container-js{
         background-position: 50% 50%;
-        background-size: 10%;
+        background-size: 0%;
     }       
-
-
-
-
-}
+    .section-me{
+        display: flex;
+        flex-direction:column-reverse;
+        flex-wrap: wrap-reverse;
+    }
+    .section-me__container{
+        display: flex;
+        flex-direction:column-reverse;
+        flex-wrap: wrap-reverse;
+    }
