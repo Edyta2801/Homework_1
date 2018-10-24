@@ -18,7 +18,7 @@ html, body{
     background-color:#546E7A; 
     background-image: url("favicons/JFD-Favicon-black-150.png");
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: top center;
     background-size:50px;
 }
 
@@ -183,6 +183,7 @@ html, body{
     background: gainsboro;
     font-size:20px;
     justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
 } 
     
 .section-me__container-fotka{ 
