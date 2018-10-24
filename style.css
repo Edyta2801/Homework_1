@@ -153,16 +153,10 @@ html, body{
     flex-grow:1;
     font-size:20px;
     justify-content: center;
-<<<<<<< HEAD
     font-family: 'Courier New', Courier, monospace;
 } 
     
 .section-me__container-fotka{ 
-=======
-}
-
-.section-me__container-fotka{
->>>>>>> 6454bc062c72bf3c5117d40c9d8c53df44d10d18
     display:flex;
     border:5px solid gainsboro;
     border-radius: 50%;
