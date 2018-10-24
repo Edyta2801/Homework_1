@@ -1,7 +1,11 @@
 html, body{
-    max-width:1300px;
     margin:0;
     padding:0;
+}
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 .menu{
@@ -21,8 +25,6 @@ html, body{
     background-position: top center;
     background-size:50px;
 }
-
-
 
 .menu__list{
     display: flex;
@@ -98,70 +100,43 @@ html, body{
     color: #2c3e50;
 }
 
-
-
 .section-technology{
-    display:flex;
-    margin:0;
-    padding:50px 0px 40px 0px;
     width: 100%;
-    height:500px;
+    padding:50px 0px 40px 0px;
     background:#2c3e50;
+    margin:0;
 }
 
 .section-technology__container{
     display:flex;
-    background:whitesmoke; 
+}
+
+.section-technology__item{
+    display:flex;
+    flex-basis: 33.33%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background:whitesmoke;
     padding:20px;
     margin:20px;
     box-sizing:border-box;
     border:5px solid gainsboro;
     border-radius: 10px;
     text-align: justify;
-    width:100%;
-    
-   
 }
 
-.section-technology__container-html{
-    display:flex;
-    flex-grow: 1;
-    background-image: url(images/HTML5_logo.png);
-    background-size: 33%;
-    background-repeat: no-repeat;
-    background-position: 50% 70%;
-    
-
-} 
-    
-
-.section-technology__container-css{
-    display:flex;
-    flex-grow: 1;
-    background-image: url(images/CSS3_logo.png);
-    background-size: 20%;
-    background-repeat: no-repeat;
-    background-position: 50% 70%;
-}
-
-
-.section-technology__container-js{
-    display:flex;
-    flex-grow: 1;
-    background-image: url(images/JavaScript_logo.png);
-    background-size: 20%;
-    background-repeat: no-repeat;
-    background-position: 50% 70%;
+.section-technology__item-img{
+    max-height: 100px;
 }
 
 
 .section-me{
     display:flex;
-    margin:0; 
-    background: #2c3e50;  
+    margin:0;
     justify-content: space-between;
     width:100%;
-    
+    background: gainsboro;
 }
 
 .section-me__container{
@@ -171,62 +146,53 @@ html, body{
     flex-flow:row;
     justify-content: center;
 }
-    
-    
-   
 
 .section-me__container-text{
     display:flex;
-    border:5px solid gainsboro;
-    align-items: center; 
+    align-items: center;
     flex-grow:1;
-    background: gainsboro;
     font-size:20px;
     justify-content: center;
+<<<<<<< HEAD
     font-family: 'Courier New', Courier, monospace;
 } 
     
 .section-me__container-fotka{ 
+=======
+}
+
+.section-me__container-fotka{
+>>>>>>> 6454bc062c72bf3c5117d40c9d8c53df44d10d18
     display:flex;
     border:5px solid gainsboro;
-} 
-    
-
-
-
+    border-radius: 50%;
+    max-height: 500px;
+    max-width: 500px;
+    width: 100%;
+}
 
 @media only screen and (max-width:780px){
     .menu, .menu__list{
-    flex-direction:column;
+        flex-direction:column;
     }
 
-    .section-technology{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
     .section-technology__container{
-        flex: 0 1 100%;
+        flex-wrap: wrap;
     }
-    .section-technology__container-html{
-        background-position: 50% 50%;
-        background-size: 30%;
+
+    .section-technology__item{
+        flex-basis: 100%;
     }
-    .section-technology__container-css{
-        background-position: 50% 50%;
-        background-size: 10%;
-    }
-    .section-technology__container-js{
-        background-position: 50% 50%;
-        background-size: 0%;
-    }       
+
     .section-me{
         display: flex;
         flex-direction:column-reverse;
         flex-wrap: wrap-reverse;
     }
+
     .section-me__container{
         display: flex;
         flex-direction:column-reverse;
         flex-wrap: wrap-reverse;
     }
+}
